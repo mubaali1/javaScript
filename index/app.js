@@ -1,6 +1,6 @@
 let todo = [];
 while (true) {
-    let task = prompt("Enter a command (a, d, l, q):");
+    let task = prompt("Enter a command (add, delete, list, quit):");
 
     if (task === "q") {
         console.log("You chose to exit.");

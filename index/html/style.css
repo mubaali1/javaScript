@@ -1,0 +1,21 @@
+.Box{
+    width: 20px;
+    height: 25px;
+    border: 2px solid var(--icon, var(--trash));
+    border-radius: 1px 1px 4px 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    transition: border-color .3s;
+    &:before,
+    &:after{
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: var(--h, 20px);
+        top: 0;
+        left: var(--1, 50%);
+        background: var(--b,var(--trash-lines));
+    }
+
+}
