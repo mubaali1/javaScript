@@ -196,9 +196,7 @@ const computerMove = () => {
 
 const checkWin = (symbol) => {
     for (let pattern of winPattrn) {
-        if (btns[pattern[0]].innerText === symbol &&
-            btns[pattern[1]].innerText === symbol &&
-            btns[pattern[2]].innerText === symbol) {
+        if (btns[pattern[0]].innerText === symbol && btns[pattern[1]].innerText === symbol && btns[pattern[2]].innerText === symbol) {
             return true;
         }
     }
@@ -220,9 +218,9 @@ pvpBtn.addEventListener('click', () => {
 pvcBtn.addEventListener('click', () => {
     gameMode = 'pvc';
     players.p1.name = 'You';
-    players.p1.symbol = 'X';
+    players.p1.symbol = 'H';
     players.p2.name = 'Computer';
-    players.p2.symbol = 'O';
+    players.p2.symbol = 'C';
     
     modeSelectionContainer.classList.add('hidden');
     starterSelectionContainer.classList.remove('hidden');
