@@ -86,10 +86,13 @@ const checkWinner = () => {
                 resetBtn.disabled = true;
                 
                 let winningPlayer = null;
-                if (pos1Val === players.p1.symbol) winningPlayer = players.p1;
-                else if (pos1Val === players.p2.symbol) winningPlayer = players.p2;
+                if (pos1Val === players.p1.symbol) 
+                    winningPlayer = players.p1;
+                else if (pos1Val === players.p2.symbol) 
+                    winningPlayer = players.p2;
 
-                if (winningPlayer) showWinner(winningPlayer.name);
+                if (winningPlayer) 
+                    showWinner(winningPlayer.name);
                 else console.error("Winning player not found!");
                 
                 confettiInterval = setInterval(() => { confetti(); }, 100);
